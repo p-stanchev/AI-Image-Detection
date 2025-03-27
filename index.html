@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-Bilderkennung (AMD)</title>
+  <link href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="d-flex flex-column vh-100 bg-white text-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/AMD-Logo.svg" alt="AI-Bilderkennung (AMD) Logo" width="40" height="40" class="me-2">
+        AI-Bilderkennung (AMD)
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#featuresModal">Funktionen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#impressumModal">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="display-4">Erkennen. Analysieren. Innovieren.</h1>
+      <p class="lead">Revolutionierung der Bilderkennung mit KI-gestützten Lösungen.</p>
+      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#startModal">Loslegen</a>
+    </div>
+  </main>
+  <footer class="bg-white text-center py-3">
+    <div class="container">
+      <small>2025 AI-Bilderkennung (AMD).</small>
+    </div>
+  </footer>
+  <div class="modal fade" id="startModal" tabindex="-1" aria-labelledby="startModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="startModalLabel">Kamerafeed mit Objekterkennung</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div id="videoContainer">
+            <video id="video" autoplay playsinline muted></video>
+            <canvas id="canvas"></canvas>
+          </div>
+          <p class="mt-3">Live-Feed mit Objekterkennung mittels COCO-SSD.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">Über uns</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            AI-Bilderkennung (AMD) nutzt die Kraft der künstlichen Intelligenz, um fortschrittliche Bilderkennungs- und Analyse-Lösungen zu bieten. Unsere Technologie identifiziert und interpretiert visuelle Daten schnell, um fundierte Entscheidungen und verbesserte Ergebnisse zu ermöglichen.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="featuresModal" tabindex="-1" aria-labelledby="featuresModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="featuresModalLabel">Funktionen</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li><strong>Echtzeit-Analyse:</strong> Sofortiges Feedback durch modernste KI.</li>
+            <li><strong>Hohe Genauigkeit:</strong> Präzise Erkennung für verlässliche Ergebnisse.</li>
+            <li><strong>Nahtlose Integration:</strong> Einfache API-Integration in Ihren Workflow.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="impressumModal" tabindex="-1" aria-labelledby="impressumModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="impressumModalLabel">Impressum</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            AI-Bilderkennung (AMD)<br>
+            Adresse: Thaliastraße 125, 1160 Wien<br>
+            Kontakt: <a href="mailto:stanchev.p22@htlwienwest.at">stanchev.p22@htlwienwest.at</a>, <a href="mailto:oezalp.a22@htlwienwest.at">oezalp.a22@htlwienwest.at</a>
+          </p>
+          <p>
+            Diese Website wird als Demo zur Verfügung gestellt.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./node_modules/@tensorflow/tfjs/dist/tf.min.js"></script>
+  <script src="./node_modules/@tensorflow-models/coco-ssd/dist/coco-ssd.min.js"></script>
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
