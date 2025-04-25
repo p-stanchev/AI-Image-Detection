@@ -1,14 +1,26 @@
 #videoContainer {
-    position: relative;
-    width: 100%;
-  }
-  #video, #canvas {
-    width: 100%;
-    display: block;
-  }
-  #canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-  }
+  position: relative;
+  width: 100%;
+}
+#video, #canvas {
+  width: 100%;
+  display: block;
+}
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+body {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+img {
+  filter: invert(1) brightness(2);
+}
